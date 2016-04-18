@@ -4,7 +4,7 @@
     "pass": ""
   },
   "mongodb": {
-    "url": "localhost/slacktome"
+    "url": "localhost/slackintime"
   },
   "auth": {
     "jwt": {
@@ -17,7 +17,7 @@
     "apiBaseUrl": "http://localhost:3000"
   },
   "slack": {
-    "webHookUrl": "https://hooks.slack.com/services/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",
+    "webHookUrl": "",
     "defaultIconUrl": "/totoro.png"
   },
   "crash2slack": null
