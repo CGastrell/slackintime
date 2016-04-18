@@ -36,7 +36,7 @@ app.use(logger('dev'));
 var auth = function (req, res, next) {
   function unauthorized(res) {
     res.set('WWW-Authenticate', 'Basic realm=Totoro');
-    return res.send(401);
+    return res.status(401).send("denied");
   }
 
   var user = basicAuth(req);
@@ -57,7 +57,7 @@ app.use('/', auth, routes);
 
 app.use('/logout', function(req, res, next){
   res.set('WWW-Authenticate', 'Basic realm=Totoro');
-  return res.send(401);
+  return res.status(401).send("denied");
 });
 
 
