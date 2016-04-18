@@ -27,6 +27,8 @@ app.set('view engine', 'ejs');
 
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(logger('dev'));
 
 
@@ -72,7 +74,6 @@ app.use('/', messagesModule.router);
 // app.use('/agenda', agendaUI(app.scheduler.agenda, {poll: 30000}));
 
 // app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 //loader = require("./lib/core-lib-loader")(app);
 // loader = require("my-express-module-loader")(app);
