@@ -9,7 +9,7 @@ var basicAuth = require('basic-auth');
 var debug = require("debug")("slacktome:app.js");
 // var crash2slack = require("crash-to-slack");
 
-var agendaUI = require('agendash');
+// var agendaUI = require('agendash');
 /**
  * Log all uncaught exceptions to Talktome Slack channel
  */
@@ -69,7 +69,7 @@ require('./lib/scheduler')(app);
 var messagesModule = require('./lib/messages')(app);
 app.use('/', messagesModule.router);
 
-app.use('/agenda', agendaUI(app.scheduler.agenda, {poll: 30000}));
+// app.use('/agenda', agendaUI(app.scheduler.agenda, {poll: 30000}));
 
 // app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
