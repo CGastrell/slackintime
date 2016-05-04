@@ -6,19 +6,11 @@
   "mongodb": {
     "url": "localhost/slackintime"
   },
-  "auth": {
-    "jwt": {
-      "secret": "",
-      "audience": "",
-      "expiresInMinutes": 1440
-    }
-  },
   "site": {
-    "apiBaseUrl": "http://localhost:3000"
+    "baseUrl": "http://localhost:3000"
   },
   "slack": {
     "webHookUrl": "",
     "defaultIconUrl": "/totoro.png"
-  },
-  "crash2slack": null
+  }
 }
