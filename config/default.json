@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "user": "",
+    "pass": ""
+  },
+  "mongodb": {
+    "url": "localhost/slackintime"
+  },
+  "site": {
+    "baseUrl": "http://localhost:3000"
+  },
+  "slack": {
+    "webHookUrl": "",
+    "defaultIconUrl": "/totoro.png"
+  }
+}

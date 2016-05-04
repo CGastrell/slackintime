@@ -1,0 +1,5 @@
+config/development.json
+config/production.json
+node_modules
+public/bootstrap-material-design
+deprecated

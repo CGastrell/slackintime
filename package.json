@@ -1,0 +1,33 @@
+{
+  "name": "slack-in-time",
+  "version": "0.0.2",
+  "description": "A scheduler for slack webhook post/messages.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "DEBUG=slacktome* NODE_ENV=development node --harmony server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cgastrell/slackintime"
+  },
+  "author": "cg <cgastrell@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "agenda": "^0.6.28",
+    "agendash": "^0.3.1",
+    "basic-auth": "^1.0.3",
+    "body-parser": "~1.8.1",
+    "config": "^1.14.0",
+    "cookie-parser": "~1.3.3",
+    "date.js": "^0.2.0",
+    "debug": "~2.0.0",
+    "ejs": "~0.8.5",
+    "express": "~4.9.0",
+    "moment": "^2.10.3",
+    "monk": "^1.0.1",
+    "morgan": "~1.3.0",
+    "request": "^2.72.0",
+    "serve-favicon": "~2.1.3"
+  }
+}
