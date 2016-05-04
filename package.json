@@ -1,7 +1,7 @@
 {
   "name": "slack-in-time",
-  "version": "1.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "A scheduler for slack webhook post/messages.",
   "main": "server.js",
   "scripts": {
     "dev": "DEBUG=slacktome* NODE_ENV=development node --harmony server.js",
